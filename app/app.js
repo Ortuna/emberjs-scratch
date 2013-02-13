@@ -31,6 +31,9 @@ Kitana.Router.map(function(){
 });
 
 Kitana.IndexRoute = Ember.Route.extend({
+  redirect: function(){
+    this.transitionTo('anotherplace')
+  },
   renderTemplate: function(){
     this.render('mainTemplate');
   }
