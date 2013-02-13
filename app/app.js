@@ -13,5 +13,6 @@ Kitana.ApplicationController = Ember.Controller.extend({
       lastName:  'Doe'
     }
   ],
-  coolObject: {coolValue: 'Some value'}
+  coolObject: {coolValue: 'Some value'},
+  url: "http://www.google.com"
 });

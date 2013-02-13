@@ -19,6 +19,9 @@
     And I know your name is {{firstName}}
   {{/if}}
 
+
+  <br/>
+  
   {{#if people}}
     Some people you may know:
     <ul>
@@ -28,9 +31,19 @@
     </ul>
   {{/if}}
 
+  
+  <br/>
+  
+  
   {{#with coolObject}}
     This is the value of coolObject.coolValue {{coolValue}}
   {{/with}}
+  
+
+  <br/>
+
+
+  <a {{bindAttr href="url"}}>{{url}}</a>
 </script>
 
 <script type="text/javascript" src="app/app.js"></script>
