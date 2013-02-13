@@ -14,7 +14,10 @@ Kitana.ApplicationController = Ember.Controller.extend({
     }
   ],
   coolObject: {coolValue: 'Some value'},
-  url: "http://www.google.com"
+  url: "http://www.google.com",
+  hideAll: function(){
+    $("body").hide();
+  }
 });
 
 
