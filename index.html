@@ -27,6 +27,10 @@
     {{/each}}
     </ul>
   {{/if}}
+
+  {{#with coolObject}}
+    This is the value of coolObject.coolValue {{coolValue}}
+  {{/with}}
 </script>
 
 <script type="text/javascript" src="app/app.js"></script>

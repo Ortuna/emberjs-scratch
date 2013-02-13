@@ -11,6 +11,7 @@ Kitana.ApplicationController = Ember.Controller.extend({
     {
       firstName: 'Jane',
       lastName:  'Doe'
-    }    
-  ]
+    }
+  ],
+  coolObject: {coolValue: 'Some value'}
 });
