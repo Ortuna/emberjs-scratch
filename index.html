@@ -18,6 +18,15 @@
     <br/>
     And I know your name is {{firstName}}
   {{/if}}
+
+  {{#if people}}
+    Some people you may know:
+    <ul>
+    {{#each people}}
+      <li> {{firstName}} {{lastName}} </li>
+    {{/each}}
+    </ul>
+  {{/if}}
 </script>
 
 <script type="text/javascript" src="app/app.js"></script>
