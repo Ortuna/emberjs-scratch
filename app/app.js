@@ -31,3 +31,18 @@ Kitana.Router.map(function() {
 Ember.Handlebars.registerBoundHelper('boomness', function(value, options) {
   return new Handlebars.SafeString('<span>' + value + " is the boomness" + '</span>');
 });
+
+
+
+Kitana.Router.map(function(){
+  this.route("home");
+  this.route("kitana", {path: "/kit"});
+});
+
+
+Kitana.KitanaRoute = Ember.Route.extend({
+  setupController: function(controller) {
+    controller.set('title', 'Coooool!');
+    alert('here!');
+  }
+})

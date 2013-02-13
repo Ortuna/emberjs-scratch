@@ -13,6 +13,9 @@
 
 <h1>Sweet App</h1>
 <script type="text/x-handlebars" >
+  {{#if title}}
+    <h1>{{title}}</h1>
+  {{/if}}
   Welcome to this awesome application!
   {{#if firstName}}
     <br/>
@@ -46,14 +49,14 @@
   <a {{bindAttr href="url"}}>{{url}}</a>
 
   <br/>
-  {{#linkTo posts.post}}Test{{/linkTo}}
-
-  <br/>
+  
 
 
   <button {{action "hideAll"}}>Hide everything!</button>
 
   {{boomness firstName}}
+
+  {{#linkTo "kitana"}}Home{{/linkTo}}
 </script>
 
 <script type="text/javascript" src="app/app.js"></script>
