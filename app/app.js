@@ -21,27 +21,26 @@ Kitana.ApplicationController = Ember.Controller.extend({
 });
 
 
-Kitana.Router.map(function() { 
-  this.resource("posts", function(){
-    this.route("post", {path: "/zzzz" });
-  });
-});
-
-
 Ember.Handlebars.registerBoundHelper('boomness', function(value, options) {
   return new Handlebars.SafeString('<span>' + value + " is the boomness" + '</span>');
 });
 
-
-
 Kitana.Router.map(function(){
-  this.route("anotherplace", {path: "/kit"});
+  this.route("index", {path: "/"});
+  this.route("anotherplace", {path: "/kit/"});
 });
 
+Kitana.IndexRoute = Ember.Route.extend({
+  renderTemplate: function(){
+    this.render('mainTemplate');
+  }
+});
 
 Kitana.AnotherplaceRoute = Ember.Route.extend({
   setupController: function(controller) {
-    controller.set('title', 'Coooool!');
-    alert('You did something!');
+    controller.set('myvar', 'Coooool!');
+  },
+  renderTemplate: function(){
+    this.render('anotherTemplate');
   }
 })

@@ -13,7 +13,15 @@
 
 <h1>Sweet App</h1>
 
-<script type="text/x-handlebars" >
+<script type="text/x-handlebars">
+{{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="anotherTemplate">
+    <h2>{{myvar}}!</h2>
+</script>
+
+<script type="text/x-handlebars"  data-template-name="mainTemplate">
   {{#if title}}
     <h1>{{title}}</h1>
   {{/if}}
@@ -59,4 +67,5 @@
 
   {{#linkTo "anotherplace"}}Home{{/linkTo}}
 </script>
+
 <script type="text/javascript" src="app/app.js"></script>
