@@ -26,3 +26,8 @@ Kitana.Router.map(function() {
     this.route("post", {path: "/zzzz" });
   });
 });
+
+
+Ember.Handlebars.registerBoundHelper('boomness', function(value, options) {
+  return new Handlebars.SafeString('<span>' + value + " is the boomness" + '</span>');
+});
