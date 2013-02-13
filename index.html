@@ -22,8 +22,8 @@
   {{#if people}}
     Some people you may know:
     <ul>
-    {{#each people}}
-      <li> {{firstName}} {{lastName}} </li>
+    {{#each person in people}}
+      <li> {{person.firstName}} {{person.lastName}} </li>
     {{/each}}
     </ul>
   {{/if}}
