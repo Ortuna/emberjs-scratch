@@ -16,3 +16,10 @@ Kitana.ApplicationController = Ember.Controller.extend({
   coolObject: {coolValue: 'Some value'},
   url: "http://www.google.com"
 });
+
+
+Kitana.Router.map(function() { 
+  this.resource("posts", function(){
+    this.route("post", {path: "/zzzz" });
+  });
+});
