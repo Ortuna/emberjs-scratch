@@ -35,14 +35,13 @@ Ember.Handlebars.registerBoundHelper('boomness', function(value, options) {
 
 
 Kitana.Router.map(function(){
-  this.route("home");
-  this.route("kitana", {path: "/kit"});
+  this.route("anotherplace", {path: "/kit"});
 });
 
 
-Kitana.KitanaRoute = Ember.Route.extend({
+Kitana.AnotherplaceRoute = Ember.Route.extend({
   setupController: function(controller) {
     controller.set('title', 'Coooool!');
-    alert('here!');
+    alert('You did something!');
   }
 })
