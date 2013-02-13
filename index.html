@@ -13,7 +13,11 @@
 
 <h1>Sweet App</h1>
 <script type="text/x-handlebars" >
-  Hello {{firstName}}
+  Welcome to this awesome application!
+  {{#if firstName}}
+    <br/>
+    And I know your name is {{firstName}}
+  {{/if}}
 </script>
 
 <script type="text/javascript" src="app/app.js"></script>
